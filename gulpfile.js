@@ -104,7 +104,7 @@ gulp.task('watch', function() {
     'src/images/*',
 	], gulp.series('copy'));
 	gulp.watch('src/images/sprite/*', gulp.series('sprite'));
-	gulp.watch('src/styles/**/*.styl', gulp.series('styles'));
+	gulp.watch('src/styles/**/*.scss', gulp.series('styles'));
 });
 
 // Build
