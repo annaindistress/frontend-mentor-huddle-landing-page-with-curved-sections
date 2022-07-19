@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 88px;
+  padding: 24px;
+
+  &__link {
+    width: 96px;
+    height: 16px;
+  }
+
+  &__logo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    margin-bottom: 145px;
+    padding: 80px;
+
+    &__link {
+      width: 240px;
+      height: 38px;
+    }
+  }
+}

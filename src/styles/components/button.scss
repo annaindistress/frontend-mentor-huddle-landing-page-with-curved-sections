@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  text-decoration: none;
+
+  &--small {
+    padding: 4px 19px;
+    font-size: 9px;
+    color: $color-primary;
+    border: 1px solid currentColor;
+    border-radius: 12px;
+
+    &:hover,
+    &:focus {
+      color: $color-primary-hover;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .button {
+
+    &--small {
+      padding: 10px 31px 9px;
+      font-size: 16px;
+      line-height: 1.2;
+      border-radius: 20px;
+    }
+  }
+}
