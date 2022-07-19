@@ -1,0 +1,50 @@
+.promo {
+  margin-bottom: 120px;
+  padding: 0 40px 210px;
+  text-align: center;
+  background-image: url('../images/screen-mockups.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 296px auto;
+
+  &__container {
+    max-width: 1017px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin: 0 0 24px;
+    font-family: $font-fancy;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+
+  &__text {
+    max-width: 600px;
+    margin: 0 auto 48px;
+  }
+
+  &__button {
+    margin-bottom: 104px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo {
+    padding-bottom: 720px;
+    background-size: 1016px auto;
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+
+    &__button {
+      margin-bottom: 120px;
+    }
+  }
+}
