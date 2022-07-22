@@ -1,0 +1,132 @@
+.features {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__card {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: top center, bottom center, top center;
+
+    &--together {
+      margin-bottom: 67px;
+      padding: 180px 0 133px;
+      background-image: url('../images/bg-section-top-mobile-1.svg'),
+        url('../images/bg-section-bottom-mobile-1.svg'),
+        linear-gradient(to bottom, white 180px, $color-basic-blue 180px, $color-basic-blue calc(100% - 133px), white 0);
+      background-size: 200% 181px, 200% 134px, 100%;
+    }
+
+    &--conversation {
+      margin-bottom: 120px;
+    }
+
+    &--users {
+      padding: 80px 0 273px;
+      background-image: url('../images/bg-section-top-mobile-2.svg'),
+        url('../images/bg-section-bottom-mobile-2.svg'),
+        linear-gradient(to bottom, white 80px, $color-basic-blue 80px, $color-basic-blue calc(100% - 220px), white 0);
+      background-size: 230% 81px, 230% 221px, 100%;
+    }
+  }
+
+  &__container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 28px;
+    padding-top: 320px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 280px;
+
+    .features__card--together & {
+      background-image: url('../images/illustration-grow-together.svg');
+    }
+
+    .features__card--conversation & {
+      background-image: url('../images/illustration-flowing-conversation.svg');
+    }
+
+    .features__card--users & {
+      background-image: url('../images/illustration-your-users.svg');
+    }
+  }
+
+  &__title {
+    max-width: 520px;
+    margin: 0 auto 16px;
+    font-family: $font-fancy;
+    font-size: 20px;
+  }
+
+  &__text {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features {
+    &__card {
+      text-align: left;
+
+      &--together {
+        margin-bottom: 103px;
+        padding: 165px 0 116px;
+        background-image: url('../images/bg-section-top-desktop-1.svg'),
+          url('../images/bg-section-bottom-desktop-1.svg'),
+          linear-gradient(to bottom, white 165px, $color-basic-blue 100px, $color-basic-blue calc(100% - 116px), white 0);
+        background-size: 100% 165px, 100% 117px, 100%;
+      }
+
+      &--conversation {
+        margin-bottom: 20px;
+      }
+
+      &--users {
+        padding: 120px 0 122px;
+        background-image: url('../images/bg-section-top-desktop-2.svg'),
+          url('../images/bg-section-bottom-desktop-2.svg'),
+          linear-gradient(to bottom, white 120px, $color-basic-blue 100px, $color-basic-blue calc(100% - 122px), white 0);
+        background-size: 100% 121px, 115% 123px, 100%;
+      }
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      min-height: 560px;
+      padding-top: 0;
+      background-size: 560px;
+      background-position: right center;
+
+      .features__card--conversation & {
+        background-position-x: left;
+      }
+    }
+
+    &__title {
+      margin-left: 0;
+      margin-bottom: 26px;
+      font-size: 40px;
+
+      .features__card--conversation & {
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+
+    &__text {
+      margin-left: 0;
+
+      .features__card--conversation & {
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+  }
+}
