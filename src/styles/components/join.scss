@@ -1,0 +1,23 @@
+.join {
+  margin-bottom: 251px;
+  text-align: center;
+
+  &__title {
+    max-width: 375px;
+    margin: 0 auto 40px;
+    font-family: $font-fancy;
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+}
+
+@media (min-width: 1200px) {
+  .join {
+    margin-bottom: 178px;
+
+    &__title {
+      max-width: none;
+      font-size: 40px;
+    }
+  }
+}
