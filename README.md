@@ -23,11 +23,24 @@ Users should be able to:
 
 ### Screenshot
 
+![](./screenshot.png)
+
 ### Links
+
+- [Solution URL](https://github.com/annaindistress/frontend-mentor-huddle-landing-page-with-curved-sections)
+- [Live Site URL](https://annaindistress.github.io/frontend-mentor-huddle-landing-page-with-curved-sections/)
 
 ## My process
 
 ### Built with
+
+- Semantic HTML5 markup
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- Gulp
+- SCSS
+- SVG Sprite
 
 ## Author
 
