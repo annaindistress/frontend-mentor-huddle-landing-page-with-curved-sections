@@ -1,6 +1,7 @@
 .button {
   display: inline-block;
   text-decoration: none;
+  cursor: pointer;
 
   &--small {
     padding: 4px 19px;
@@ -24,6 +25,22 @@
     background-color: $color-primary;
     border-radius: 20px;
     box-shadow: 0 3px 7px rgba($color-basic-black, .2231);
+
+    &:hover,
+    &:focus {
+      background-color: $color-primary-hover;
+    }
+  }
+
+  &--form {
+    padding: 15px 40px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    background-color: $color-primary;
 
     &:hover,
     &:focus {

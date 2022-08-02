@@ -1,0 +1,43 @@
+.contacts {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    padding-left: 40px;
+    line-height: 1.71;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    &--phone {
+      background-image: url('../images/icon-phone.svg');
+      background-size: 18px;
+    }
+
+    &--email {
+      background-image: url('../images/icon-email.svg');
+      background-size: 20px 16px;
+    }
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $color-secondary;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts {
+
+    &__item {
+      line-height: 1.5;
+    }
+  }
+}

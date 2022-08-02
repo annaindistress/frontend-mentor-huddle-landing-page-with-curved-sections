@@ -1,0 +1,59 @@
+.newsletter {
+  padding: 0 28px;
+
+  &__title {
+    margin: 0 0 16px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0 0 32px;
+    font-weight: 600;
+    line-height: 1.71;
+  }
+
+  &__form {
+    display: grid;
+    gap: 16px;
+  }
+
+  &__input {
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 1.71;
+    border-radius: 6px;
+  }
+
+  &__button {
+    width: 160px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .newsletter {
+    padding: 0;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__text {
+      max-width: 400px;
+      margin-bottom: 40px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .newsletter {
+
+    &__form {
+      grid-template-columns: 320px 160px;
+      gap: 40px;
+    }
+  }
+}

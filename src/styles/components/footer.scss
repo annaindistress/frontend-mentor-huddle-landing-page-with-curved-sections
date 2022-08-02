@@ -1,0 +1,62 @@
+.footer {
+  display: grid;
+  gap: 104px;
+  padding-top: 109px;
+  padding-bottom: 46px;
+  color: white;
+  background-image: url('../images/bg-footer-top-mobile.svg'),
+        linear-gradient(to bottom, white 40px, $color-basic-black 40px, $color-basic-black 0);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: calc(100% + 76px) 41px, 100%;
+
+  &__container {
+    padding: 0 28px;
+  }
+
+  &__link {
+    display: block;
+    width: 200px;
+    height: 32px;
+    margin-bottom: 16px;
+    color: inherit;
+  }
+
+  &__logo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__text {
+    margin: 0 0 40px;
+    font-weight: 600;
+  }
+
+  &__contacts {
+    margin: 0 0 48px;
+  }
+
+  &__newsletter {
+    order: -1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    grid-template-columns: 410px 520px;
+    justify-content: space-between;
+    padding: 273px 120px 103px;
+    background-image: url('../images/bg-footer-top-desktop.svg'),
+        linear-gradient(to bottom, white 143px, $color-basic-black 143px, $color-basic-black 0);
+    background-size: calc(100% + 115px) 144px, 100%;
+
+    &__container {
+      padding: 0;
+    }
+
+    &__newsletter {
+      order: 0;
+    }
+  }
+}
